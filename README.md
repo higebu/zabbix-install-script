@@ -1,28 +1,15 @@
-zabbix-install-script
-=====================
+Zabbix Install Script for Ubuntu
+================================
 
-Zabbix Install Script for Ubuntu.
+* Ubuntu 12.04.3
+* Zabbix 2.2
+* MySQL 5.6
 
-Install Zabbix Server
----------------------
+* from_sourceの方はちょっと古い
+* from_packageはZabbixのパッケージを入れるときに勝手に入るMySQLを使いたくない人向け
 
-1. Install MySQL Server
-2. Run create_db_for_server.sh
-3. Run install_zabbix_server.sh
-4. Start Zabbix Server `service zabbix-server start`
-
-Install Zabbix Web
-------------------
-1. Read install_web.sh and install zabbix-web
-
-Install Zabbix Proxy
---------------------
-1. Install MySQL Server
-2. Run create_db_for_proxy.sh
-3. Run install_zabbix_proxy.sh
-4. Start Zabbix Proxy `service zabbix-proxy start`
-
-Install Zabbix Agent
---------------------
-1. Run install_zabbix_agent.sh
-2. Start Zabbix Agent `service zabbix-agent start`
+TODO
+----
+* MySQLの設定が適当なので整理したい
+* パスワードが空だったり設定できなかったりしているので設定できるようにしたい
+* Ansibleとかで叩けるようにしたい
